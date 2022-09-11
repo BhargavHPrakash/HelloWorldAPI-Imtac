@@ -9,5 +9,3 @@ public class RestapiApplication {
 		SpringApplication.run(RestapiApplication.class, args);
 	}
 }
-
-// single executable jar that can be executed is name.

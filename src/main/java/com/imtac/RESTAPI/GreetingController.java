@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class GreetingController {
-	private static final String template = "hello, %s!";
-	private static final AtomicLong counter = new AtomicLong(); // atomically incremented sequence numbers
+	private static final String template = "hello %s!";
+	private static final AtomicLong counter = new AtomicLong(); // atomically incremented sequence numbers // this is atomic class variable, every data-type has it and it is thread safe so we use it.
 
 	@GetMapping("/greeting")
 	public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
